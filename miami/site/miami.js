@@ -37,7 +37,7 @@ app.get('/home', (request,response)=>{
 }  );
 
 // this one trigers a serve error------------//
-app.get('/histoty', (requiii,response)=>{    //
+app.get('/history', (req,res)=>{    //
                 //
     response.send('Over hrer are hsitory')   //
 }  );//--------------------------------------//
