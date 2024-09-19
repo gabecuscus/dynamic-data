@@ -1,0 +1,21 @@
+{
+  "name": "miami_travel",
+  "version": "1.0.0",
+  "description": "a travel website about maimi",
+  "main": "miami.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "travel",
+    "meow",
+    "heat",
+    "flood"
+  ],
+  "author": "Gabriel Torres",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1"
+  }
+}
