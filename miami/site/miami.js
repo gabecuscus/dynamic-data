@@ -1,9 +1,32 @@
+// HWWWWWWWWWW HOME WORK HOME WORK
+
+// make these secitons
+
+// about: 1 short paragraph per page
+
+// Servcies:
+    // show at least 4 services per page
+
+// Packages: Show at least 6 packages
+
+// Gallery: 
+    // show at least 16 image pe page
+
+
+
+
+
+
+
+
+
 // imports express into our project
 const express = require('express');
 
 const app = express();
 
-
+// specify static routes
+app.use(express.static('public'));
 
 
 // import a package for handlebars
@@ -24,17 +47,45 @@ console.log(process.env);
 
 // process routes
 app.get('/', (request,response)=>{
-    response.render('home');
+    response.render('landing', {
+        title: "Welcome",
+        abstract: "MIami is de home papo",
+        image: "mewomeow2.png"
+    });
     
 }  );
 app.get('/about', (request,response)=>{
     
-    response.render('about');
+    response.render('about', {
+        title: "About miamiiii",
+        abstract: "so absically papo like miami si crazy i mean tremendo come pingas on the ride fr"
+    });
 }  );
 app.get('/home', (request,response)=>{
     
     response.render('home');
 }  );
+
+app.get('/nightlife', (request,response)=>{
+    
+    response.render('page', {
+        title: "Night Life",
+        abstract: "so nightlife is way too expesncvie and is one big scam fr"
+    });
+}  );
+
+app.get('/poopoo', (request,response)=>{
+    
+    response.render('page', {
+        title: "Anotha new page",
+        abstract: "so basically i show how i can just make a new page on the fly"
+    });
+}  );
+
+
+
+
+
 
 // this one trigers a serve error------------//
 app.get('/history', (req,res)=>{    //

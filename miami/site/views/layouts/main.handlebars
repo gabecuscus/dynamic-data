@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{title}}</title>
+
+
+    {{!-- import css style --}}
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    {{!-- override css goes last --}}
+    <link rel="stylesheet" href="/css/miami.css">
+
+
 </head>
 <body>
+
+{{!-- BEGIN navigation --}}
+
+<nav class="navbar navbar-expand-lg orange-bg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Miami Travels</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/nightlife">Night life</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/poopoo">Super duper secret page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{{!-- END navigation --}}
+
+
+
+
+
     <ul>
         <li> <a href="/"> HOME </a> </li>
         <li> <a href="/about"> about page link</a> </li>
@@ -13,6 +63,13 @@
         <li> <a href="/history"> history page link</a> </li>
     </ul>
     {{!-- default placeholder for handlebars --}}
-    {{{body}}}
+    <div class="container">
+        {{{body}}}
+    </div>
+
+
+
+
+    <script src="/js/bootstrap.bundle.js"></script>
 </body>
 </html>
