@@ -1,0 +1,17 @@
+<div>
+    <h3>pooPhoto1 pooooooPhoto1 ppooPhoto2 ppo </h3>
+</div>
+
+<div class="row gallery">
+
+    {{#each gallery.images}}
+
+    {{!-- our image loop --}}
+    <div class="col-3 galleryItem">
+        <img class="img-fluid" src="{{this.url}}" alt="{{this.title}}">
+    </div>
+
+    {{/each}}
+
+
+</div>

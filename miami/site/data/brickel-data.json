@@ -1,0 +1,92 @@
+{
+    "title":"Welcome to Miami",
+    "abstract":"this is the abstract",
+    "image":"/images/mewomeow2.png",
+    "services":[
+        {
+        "titel":"Transportation",
+        "intro":"you move around miami with dis",
+        "list": [
+            "Uber",
+            "Bus",
+            "Metro mover"
+        ],
+        "image":"/images/homepage/transportation.jpg"
+        },
+        {
+        "titel":"Tours",
+        "intro":"you move around miami with dis",
+        "list": [
+            "Tour 1",
+            "Tour 2",
+            "Tour 3"
+        ],
+        "image":"/images/homepage/transportation.jpg"
+        },
+        {
+        "titel":"Transportation",
+        "intro":"you move around miami with dis",
+        "list": [
+            "Uber",
+            "Bus",
+            "Metro mover"
+            ],
+        "image":"/images/homepage/transportation.jpg"
+        },
+        {
+        "titel":"Transportation",
+        "intro":"you move around miami with dis",
+        "list": [
+            "Uber",
+            "Bus",
+            "Metro mover"
+        ],
+        "image":"/images/homepage/transportation.jpg"
+        }
+    ],
+    "packages":[
+        {
+            "titel":"beach day",
+            "description":"the beach day is a beahc dya that ahs a lot of sun and suand andd waves boo yaa",
+            "image":"/images/homepage/beachday.jpg",
+            "price":"1500",
+            "duration":"1 day"
+        },
+        {
+            "titel":"cat caffe day",
+            "description":"the cat caffe is suoer cool there are lots of cats",
+            "image":"/images/homepage/catcafe.jpg",
+            "price":"500",
+            "duration":"1/2 day"
+        },
+        {
+            "titel":"ventanita tour",
+            "description":"ventanias are super nice, you can get caffecitos and croquetas",
+            "image":"/images/homepage/croquetta.jpg",
+            "price":"70",
+            "duration":"1 day"
+        },
+        {
+            "titel":"DoralZuela tour",
+            "description":"Doral is a part of Miami that is filled with Venzulenas, so here you can expericne tremendues super areapas and teqeunos",
+            "image":"/images/homepage/DoralShop.jpg",
+            "price":"200",
+            "duration":"1 day"
+        },
+        {
+            "titel":"Coconut Grove",
+            "description":"coconut grove is and expensive part of miami, hrer you can see a bunch of rich people who love to dress poor",
+            "image":"/images/homepage/GroveMall.jpg",
+            "price":"300",
+            "duration":"1 day"
+        },
+        {
+            "titel":"New Jersey sight seeing",
+            "description":"Here we go to areas near UM to find a bunch of snowbirds from new york and new Jersey, you can listen closley to see if theyre from new jerersy by if they say samiiiin",
+            "image":"/images/homepage/NewJersyFool.jpg",
+            "price":"20",
+            "duration":"1/5 day"
+        }
+
+    ]
+}

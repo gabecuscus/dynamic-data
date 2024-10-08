@@ -45,9 +45,13 @@ app.set('view engine', 'handlebars');
 const PORT = process.env.port || 3000;
 console.log(process.env);
 
+const gallery = require("./data/gallery.json");
+
 // process routes
 app.get('/', (request,response)=>{
+    console.log(gallery);
     response.render('landing', {
+        gallery,
         title: "Welcome",
         abstract: "MIami is de home papo",
         image: "mewomeow2.png"

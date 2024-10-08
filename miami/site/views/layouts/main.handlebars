@@ -16,57 +16,23 @@
 </head>
 <body>
 
-{{!-- BEGIN navigation --}}
-
-<nav class="navbar navbar-expand-lg orange-bg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Miami Travels</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/nightlife">Night life</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="/poopoo">Super duper secret page</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-{{!-- END navigation --}}
+{{!-- navigation start --}}
+{{!-- navigation end --}}
 
 
 
 
 
-    <ul>
-        <li> <a href="/"> HOME </a> </li>
-        <li> <a href="/about"> about page link</a> </li>
-        <li> <a href="/contact"> contact page link</a> </li>
-        <li> <a href="/history"> history page link</a> </li>
-    </ul>
+    {{!-- inlcude a partial --}}
+    {{>nav siteName="Miami Travel Site"}}
+
+
     {{!-- default placeholder for handlebars --}}
     <div class="container">
         {{{body}}}
-    </div>
 
+        {{>gallery}}
+    </div>
 
 
 
