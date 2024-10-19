@@ -50,14 +50,18 @@ const gallery = require("./data/gallery.json");
 // process routes
 app.get('/', (request,response)=>{
     console.log(gallery);
+    //Import page-specifc data
+    const data = require("./data/home-data.json");
     response.render('landing', {
         gallery,
-        title: "Welcome",
-        abstract: "MIami is de home papo",
-        image: "mewomeow2.png"
+        data
+        // title: "Welcome",
+        // abstract: "MIami is de home papo",
+        // image: "mewomeow2.png"
     });
     
 }  );
+
 app.get('/about', (request,response)=>{
     
     response.render('about', {
@@ -85,6 +89,61 @@ app.get('/poopoo', (request,response)=>{
         abstract: "so basically i show how i can just make a new page on the fly"
     });
 }  );
+
+app.get('/MiamiBeach', (request,response)=>{
+    console.log(gallery);
+    //Import page-specifc data
+    const data = require("./data/MiamiBeach-data.json");
+    response.render('landing', {
+        gallery,
+        data
+        // title: "Welcome",
+        // abstract: "MIami is de home papo",
+        // image: "mewomeow2.png"
+    });
+}  );
+
+app.get('/Whynwood', (request,response)=>{
+    console.log(gallery);
+    //Import page-specifc data
+    const data = require("./data/Whynwood-data.json");
+    response.render('landing', {
+        gallery,
+        data
+        // title: "Welcome",
+        // abstract: "MIami is de home papo",
+        // image: "mewomeow2.png"
+    });
+}  );
+
+app.get('/Doral', (request,response)=>{
+    console.log(gallery);
+    //Import page-specifc data
+    const data = require("./data/Doral-data.json");
+    response.render('landing', {
+        gallery,
+        data
+        // title: "Welcome",
+        // abstract: "MIami is de home papo",
+        // image: "mewomeow2.png"
+    });
+}  );
+
+app.get('/Brickel', (request,response)=>{
+    console.log(gallery);
+    //Import page-specifc data
+    const data = require("./data/brickel-data.json");
+    response.render('landing', {
+        gallery,
+        data
+        // title: "Welcome",
+        // abstract: "MIami is de home papo",
+        // image: "mewomeow2.png"
+    });
+}  );
+
+
+
 
 
 

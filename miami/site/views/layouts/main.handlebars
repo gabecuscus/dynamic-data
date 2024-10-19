@@ -8,6 +8,8 @@
 
     {{!-- import css style --}}
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl/assets/owl.theme.default.min.css">
 
     {{!-- override css goes last --}}
     <link rel="stylesheet" href="/css/miami.css">
@@ -34,8 +36,33 @@
         {{>gallery}}
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script src="/js/bootstrap.bundle.js"></script>
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/owl/owl.carousel.min.js"></script>
+
+    <script>
+        $(function(){
+            
+            $('.owl-packages').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            })
+        });
+    </script>
 </body>
 </html>

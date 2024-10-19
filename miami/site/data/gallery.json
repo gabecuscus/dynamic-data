@@ -1,52 +1,52 @@
 {
     "images": [
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow1.png",
+            "title":"image title 1"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow2.png",
+            "title":"image title 2"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow3.png",
+            "title":"image title 3"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow4.png",
+            "title":"image title 4"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow5.png",
+            "title":"image title 5"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow6.png",
+            "title":"image title 6"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow7.png",
+            "title":"image title 7"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow8.png",
+            "title":"image title 8"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow9.png",
+            "title":"image title 9"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow10.png",
+            "title":"image title 10"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow11.png",
+            "title":"image title 11"
         },
         { 
-            "url":"/images/gallery/meowmeow1.jpg",
-            "title":"imaage title 1"
+            "url":"/images/gallery/meow12.png",
+            "title":"image title 12"
         }
     ]
 }
