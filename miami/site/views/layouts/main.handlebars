@@ -21,20 +21,73 @@
 {{!-- navigation start --}}
 {{!-- navigation end --}}
 
-
-
-
-
     {{!-- inlcude a partial --}}
     {{>nav siteName="Miami Travel Site"}}
 
 
-    {{!-- default placeholder for handlebars --}}
+
+
+
+
+{{!-- --------------------- --}}
+{{!-- SIDE NAV BAR START --}}
+    <div class="row">
+    <div id="sideNav" class="col-4" style="position: fixed; right: -150px; top: 50%; transform: translateY(-50%); height: 60vh; overflow-y: auto; background-color: white; border: 2px solid black; border-radius: 15px; padding: 10px;">
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+        <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">Item 1</a>
+            {{!-- <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+            </nav> --}}
+            <a class="nav-link" href="#item-2">Item 2</a>
+            <a class="nav-link" href="#item-3">Item 3</a>
+            <a class="nav-link" href="#item-4">Item 4</a>
+            <a class="nav-link" href="#item-5">Item 5</a>
+        
+            </nav>
+        </nav>
+        </nav>
+    </div>
+
+
+
+    <div class="col-8">
+        <div data-bs-spy="scroll" style="padding-top: 100px; padding-bottom: 100px;" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        {{!-- <div id="item-1">
+            <h4>Item 1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque mollitia distinctio laborum debitis at voluptate nam iure, qui delectus. Molestiae dicta molestias ullam commodi rerum placeat odio illum excepturi.</p>
+        </div> --}}
+        {{!-- <div id="item-1-1">
+            <h5>Item 1-1</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, perferendis nam! Illum aspernatur praesentium, expedita, dolores reprehenderit eaque eos doloremque distinctio nobis unde molestias commodi? Rerum illo voluptatibus asperiores accusantium.</p>
+        </div>
+        <div id="item-1-2">
+            <h5>Item 1-2</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, quo magni possimus earum laborum animi? Facilis laudantium tempora non dolores, accusantium impedit, facere eos quidem quasi quam eius labore ullam!</p>
+        </div> --}}
+        
+
+
+
     <div class="container">
         {{{body}}}
 
-        {{>gallery}}
+        <div id="item-5">
+            {{>gallery}}
+        </div>
+        
     </div>
+
+        {{!-- end scroll readin area --}}
+        </div>
+    </div>
+    </div>
+{{!-- ------------------ --}}
+{{!-- SIDE NAV BAR END --}}
+
+
+    {{!-- default placeholder for handlebars --}}
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -63,6 +116,24 @@
                 }
             })
         });
+    </script>
+    <script>
+        let isScrolling;
+            
+            // Listen for the window's scroll event
+            window.addEventListener('scroll', function() {
+                // Show the side navigation when scrolling
+                document.getElementById('sideNav').style.right = '20px';
+                
+                // Clear the previous timeout (if there was one)
+                window.clearTimeout(isScrolling);
+                
+                // Set a timeout to run after scrolling ends
+                isScrolling = setTimeout(function() {
+                    // Hide the side navigation after scrolling stops
+                    document.getElementById('sideNav').style.right = '-190px';
+                }, 1000); // Adjust time (in ms) to how long after scrolling it hides
+            });
     </script>
 </body>
 </html>
