@@ -1,0 +1,55 @@
+
+
+/* Target elemtns using class */
+/* .orange-bg {
+    background-color: #FF9900;
+} */
+
+/* body.main_background {
+    background: linear-gradient(to top, #f8ae8e, #FFFFFF); 
+    margin: 0; 
+    height: 100vh; 
+    width: 100vw; 
+    overflow:auto
+}  */
+/* 
+body.main_background{
+    background: linear-gradient(to top, #FFA500, #FFFFFF); 
+} */
+body.main_background {
+    background: linear-gradient(to top, #f8ce7e, #FFFFFF); /* Warm orange gradient */
+    font-family: 'Arial', sans-serif; /* Ensure clean and modern font */
+}
+
+.card {
+    border-radius: 10px;
+    
+}
+.card-img-top{
+    transition: transform 0.3s cubic-bezier(0.9, 0, 0.2, 3); /* Faster start, slower finish */
+}
+
+.card:hover {
+    transform: scale(1.015); /* Slightly enlarge on hover */
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #333; /* Dark gray for bold text */
+}
+
+
+.card-footer {
+    border-top: 10px solid #ddd; /* Subtle top border */
+}
+
+a.text-dark:hover {
+    color: #FFA500; /* Add hover effect for details link */
+}
+
+
+
+
+
+
+/* CARESOUL STUFFFFFFF */

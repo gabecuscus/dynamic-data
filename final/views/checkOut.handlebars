@@ -1,0 +1,28 @@
+<h1>Check Out</h1>
+
+<form action="/checkout/process" method="POST">
+
+    <p>
+        first_name <input type="" name="first_name" >
+    </p>
+    <p>
+        last_name <input type="" name="last_name" >
+    </p>
+    <p>
+        address <input type="" name="address">
+    </p>
+    <p>
+        last 3 digits of credit card<input type="" name="credit_Card" >
+    </p>
+
+
+
+    {{!-- <input type="hidden" name="name" value="{{current_car.name}}"> --}}
+    {{!-- <input type="hidden" name="price" value="{{current_car.price}}"> --}}
+    {{!-- <input type="hidden" name="description" value="{{current_car.description}}"> --}}
+    {{!-- <input type="hidden" name="image" value="{{current_car.image}}"> --}}
+        {{!-- <button type="submit">ADD TO CART</button> --}}
+        <button type="submit" class="btn btn-primary">Place Order</button>
+        {{!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle righto offcanvas</button> --}}
+        
+</form>

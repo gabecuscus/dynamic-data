@@ -1,0 +1,221 @@
+{
+    "company": "Toyota",
+    "products": [
+        {
+            "id": 1,
+            "name": "2024 4Runner",
+            "price": 40705,
+            "category": 2,
+            "image": "/images/toyota/mains/toy1.png",
+            "details": [
+                "16/19 EST. MPG",
+                "ADVENTURE-READY DESIGN",
+                "RUGGED BODY-ON-FRAME CONSTRUCTION"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy1_1.png",
+                "/images/toyota/gal/toy1_2.png",
+                "/images/toyota/gal/toy1_3.png",
+                "/images/toyota/gal/toy1_4.png"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "2024 bZ4X",
+            "price": 43070,
+            "category": 2,
+            "image": "/images/toyota/mains/toy2.png",
+            "details": [
+                "252-MILE ELECTRIC RANGE",
+                "BATTERY ELECTRIC VEHICLE",
+                "ALL-WHEEL DRIVE OPTION"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy2_1.png",
+                "/images/toyota/gal/toy2_2.png",
+                "/images/toyota/gal/toy2_3.png",
+                "/images/toyota/gal/toy2_4.png"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "2025 Camry Hybrid",
+            "price": 28400,
+            "category": 2,
+            "image": "/images/toyota/mains/toy3.png",
+            "details": [
+                "53/50 EST. MPG",
+                "FUEL-EFFICIENT PERFORMANCE",
+                "LUXURIOUS INTERIOR OPTIONS"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy3_1.png",
+                "/images/toyota/gal/toy3_2.png",
+                "/images/toyota/gal/toy3_3.png",
+                "/images/toyota/gal/toy3_4.png"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "2024 Corolla",
+            "price": 22050,
+            "category": 2,
+            "image": "/images/toyota/mains/toy4.png",
+            "details": [
+                "32/41 EST. MPG",
+                "COMPACT DESIGN WITH STYLE",
+                "APPLE CARPLAY AND ANDROID AUTO INTEGRATION"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy4_1.png",
+                "/images/toyota/gal/toy4_2.png",
+                "/images/toyota/gal/toy4_3.png",
+                "/images/toyota/gal/toy4_4.png"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "2025 Corolla",
+            "price": 22175,
+            "category": 2,
+            "image": "/images/toyota/mains/toy5.png",
+            "details": [
+                "32/41 EST. MPG",
+                "RELIABLE AND ECONOMICAL",
+                "IMPROVED SUSPENSION FOR A SMOOTHER RIDE"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy5_1.png",
+                "/images/toyota/gal/toy5_2.png",
+                "/images/toyota/gal/toy5_3.png",
+                "/images/toyota/gal/toy5_4.png"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "2024 Corolla Cross",
+            "price": 23860,
+            "category": 2,
+            "image": "/images/toyota/mains/toy6.png",
+            "details": [
+                "31/33 EST. MPG",
+                "CROSSOVER CONVENIENCE",
+                "AMPLE CARGO SPACE"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy6_1.png",
+                "/images/toyota/gal/toy6_2.png",
+                "/images/toyota/gal/toy6_3.png",
+                "/images/toyota/gal/toy6_4.png"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "2024 Corolla Cross Hybrid",
+            "price": 28220,
+            "category": 2,
+            "image": "/images/toyota/mains/toy7.png",
+            "details": [
+                "45/38 EST. MPG",
+                "HYBRID TECHNOLOGY",
+                "ADVANCED SAFETY FEATURES"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy7_1.png",
+                "/images/toyota/gal/toy7_2.png",
+                "/images/toyota/gal/toy7_3.png",
+                "/images/toyota/gal/toy7_4.png"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "2024 Corolla Hatchback",
+            "price": 23505,
+            "category": 2,
+            "image": "/images/toyota/mains/toy8.png",
+            "details": [
+                "32/41 EST. MPG",
+                "SPORTY HATCHBACK DESIGN",
+                "PREMIUM AUDIO SYSTEM"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy8_1.png",
+                "/images/toyota/gal/toy8_2.png",
+                "/images/toyota/gal/toy8_3.png",
+                "/images/toyota/gal/toy8_4.png"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "2025 Corolla Hatchback",
+            "price": 23630,
+            "category": 2,
+            "image": "/images/toyota/mains/toy9.png",
+            "details": [
+                "32/41 EST. MPG",
+                "VERSATILE AND FUN TO DRIVE",
+                "NEW COLOR OPTIONS AVAILABLE"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy9_1.png",
+                "/images/toyota/gal/toy9_2.png",
+                "/images/toyota/gal/toy9_3.png",
+                "/images/toyota/gal/toy9_4.png"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "2024 Corolla Hybrid",
+            "price": 23500,
+            "category": 2,
+            "image": "/images/toyota/mains/toy10.png",
+            "details": [
+                "53/46 EST. MPG",
+                "HYBRID EFFICIENCY",
+                "ECO MODE DRIVING OPTIONS"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy10_1.png",
+                "/images/toyota/gal/toy10_2.png",
+                "/images/toyota/gal/toy10_3.png",
+                "/images/toyota/gal/toy10_4.png"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "2025 Corolla Hybrid",
+            "price": 23625,
+            "category": 2,
+            "image": "/images/toyota/mains/toy11.png",
+            "details": [
+                "53/46 EST. MPG",
+                "ADVANCED HYBRID TECHNOLOGY",
+                "MORE POWERFUL ELECTRIC MOTOR"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy11_1.png",
+                "/images/toyota/gal/toy11_2.png",
+                "/images/toyota/gal/toy11_3.png",
+                "/images/toyota/gal/toy11_4.png"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "2024 GR86",
+            "price": 29300,
+            "category": 2,
+            "image": "/images/toyota/mains/toy12.png",
+            "details": [
+                "20/26 EST. MPG",
+                "SPORTY PERFORMANCE COUPE",
+                "UPGRADED SUSPENSION SYSTEM"
+            ],
+            "gallery": [
+                "/images/toyota/gal/toy12_1.png",
+                "/images/toyota/gal/toy12_2.png",
+                "/images/toyota/gal/toy12_3.png",
+                "/images/toyota/gal/toy12_4.png"
+            ]
+        }
+    ]
+}

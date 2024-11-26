@@ -1,0 +1,58 @@
+{{!-- <h1>PASO HACERE!!!!!</h1>
+{{#each data.products}}
+
+    <div class="container">
+
+
+
+        {{>addcart}}
+
+        <div class="row">
+
+            <div class="col">
+                <img class="img-fluid" src="{{this.image}}" alt="">
+            </div>
+            
+        </div>
+
+        {{this.id}} {{this.name}} {{this.price}}
+        
+
+        <a href="/category{{this.category}}/details/{{this.id}}"> View prodcuts details</a>
+        <br>
+
+    </div>
+
+
+{{/each}} --}}
+
+
+
+<h1 class="text-center mb-4">    ________{{!-- PASO HACERE!!!!! --}}</h1>
+
+<h1 class="text-center mb-4" style="font-weight: bold;">{{data.company}}!!!!!</h1>
+
+<div class="container">
+    <div class="row">
+        {{#each data.products}}
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 shadow-sm">
+                <img class="card-img-top img-fluid" src="{{this.image}}" alt="{{this.name}}">
+                <div class="card-body text-left">
+                    <p class="card-title" style="font-weight: bold;">{{this.name}}</p>
+                    <p class="card-text" style="font-size: 0.77rem; color: #504f4f;">${{this.price}}</p>
+                    
+
+                    {{!-- <a href="/category{{this.category}}/details/{{this.id}}" class="btn btn-link text-decoration-none text-dark">View Product Details</a> --}}
+                    <a href="/{{../data.company}}/details/{{this.id}}" class="btn btn-link text-decoration-none text-dark">View Product Details</a>
+                </div>
+                <div class="card-footer text-center bg-light border-0">
+                    {{>addcart}}
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        {{/each}}
+    </div>
+</div>

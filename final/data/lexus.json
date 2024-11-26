@@ -1,0 +1,221 @@
+{
+    "company": "Lexus",
+    "products": [
+        {
+            "id": 1,
+            "name": "2025 UX HYBRID",
+            "price": 37515,
+            "category": 1,
+            "image": "/images/lexus/mains/lex1.png",
+            "details": [
+                "196-HORSEPOWER HYBRID",
+                "LEXUS SAFETY SYSTEM+ 3.0",
+                "43-MPG COMBINED EPA ESTIMATE (FWD)"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex1_1.png",
+                "/images/lexus/gal/lex1_2.png",
+                "/images/lexus/gal/lex1_3.png",
+                "/images/lexus/gal/lex1_4.png"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "2025 NX",
+            "price": 41990,
+            "category": 1,
+            "image": "/images/lexus/mains/lex2.png",
+            "details": [
+                "203-HORSEPOWER IN-LINE 4",
+                "LEXUS INTERFACE SYSTEM",
+                "LEXUS SAFETY SYSTEM+ 3.0"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex2_1.png",
+                "/images/lexus/gal/lex2_2.png",
+                "/images/lexus/gal/lex2_3.png",
+                "/images/lexus/gal/lex2_4.png"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "2025 NX HYBRID",
+            "price": 46300,
+            "category": 1,
+            "image": "/images/lexus/mains/lex3.png",
+            "details": [
+                "240 NET COMBINED HORSEPOWER HYBRID",
+                "7.2-SECOND 0-60 TIME",
+                "39-MPG COMBINED MANUFACTURER ESTIMATE"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex3_1.png",
+                "/images/lexus/gal/lex3_2.png",
+                "/images/lexus/gal/lex3_3.png",
+                "/images/lexus/gal/lex3_4.png"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "2025 NX PLUG-IN HYBRID EV",
+            "price": 62415,
+            "category": 1,
+            "image": "/images/lexus/mains/lex4.png",
+            "details": [
+                "304-NET-COMBINED-HORSEPOWER",
+                "PLUG-IN HYBRID ELECTRIC VEHICLE",
+                "37-MILE MANUFACTURER-ESTIMATED ALL-ELECTRIC DRIVING RANGE"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex4_1.png",
+                "/images/lexus/gal/lex4_2.png",
+                "/images/lexus/gal/lex4_3.png",
+                "/images/lexus/gal/lex4_4.png"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "2024 RZ",
+            "price": 55175,
+            "category": 1,
+            "image": "/images/lexus/mains/lex5.png",
+            "details": [
+                "ALL-ELECTRIC LUXURY SUV",
+                "LEXUS SAFETY SYSTEM+ 3.0",
+                "UP TO 266-MILE MANUFACTURER-ESTIMATED RANGE"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex5_1.png",
+                "/images/lexus/gal/lex5_2.png",
+                "/images/lexus/gal/lex5_3.png",
+                "/images/lexus/gal/lex5_4.png"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "2025 RX",
+            "price": 50325,
+            "category": 1,
+            "image": "/images/lexus/mains/lex6.png",
+            "details": [
+                "275-HORSEPOWER TURBOCHARGED ENGINE",
+                "LEXUS INTERFACE WITH 14-INCH TOUCHSCREEN",
+                "LEXUS SAFETY SYSTEM+ 3.0"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex6_1.png",
+                "/images/lexus/gal/lex6_2.png",
+                "/images/lexus/gal/lex6_3.png",
+                "/images/lexus/gal/lex6_4.png"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "2025 RX HYBRID",
+            "price": 52475,
+            "category": 1,
+            "image": "/images/lexus/mains/lex7.png",
+            "details": [
+                "246-NET-COMBINED-HORSEPOWER HYBRID",
+                "LEXUS SAFETY SYSTEM+ 3.0",
+                "37-MPG COMBINED MANUFACTURER ESTIMATE"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex7_1.png",
+                "/images/lexus/gal/lex7_2.png",
+                "/images/lexus/gal/lex7_3.png",
+                "/images/lexus/gal/lex7_4.png"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "2025 RX 500h F SPORT PERFORMANCE",
+            "price": 66150,
+            "category": 1,
+            "image": "/images/lexus/mains/lex8.png",
+            "details": [
+                "366-NET-COMBINED-HORSEPOWER HYBRID",
+                "0-60 MPH IN 5.9 SECONDS",
+                "DIRECT4 ALL-WHEEL DRIVE SYSTEM"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex8_1.png",
+                "/images/lexus/gal/lex8_2.png",
+                "/images/lexus/gal/lex8_3.png",
+                "/images/lexus/gal/lex8_4.png"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "2025 RX PLUG-IN HYBRID EV",
+            "price": 72610,
+            "category": 1,
+            "image": "/images/lexus/mains/lex9.png",
+            "details": [
+                "PLUG-IN HYBRID ELECTRIC VEHICLE",
+                "LEXUS SAFETY SYSTEM+ 3.0",
+                "MANUFACTURER-ESTIMATED ALL-ELECTRIC DRIVING RANGE"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex9_1.png",
+                "/images/lexus/gal/lex9_2.png",
+                "/images/lexus/gal/lex9_3.png",
+                "/images/lexus/gal/lex9_4.png"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "2024 TX",
+            "price": 55050,
+            "category": 1,
+            "image": "/images/lexus/mains/lex10.png",
+            "details": [
+                "275-HORSEPOWER TURBO ENGINE",
+                "LEXUS INTERFACE WITH 14-INCH TOUCHSCREEN",
+                "LEXUS SAFETY SYSTEM+ 3.0"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex10_1.png",
+                "/images/lexus/gal/lex10_2.png",
+                "/images/lexus/gal/lex10_3.png",
+                "/images/lexus/gal/lex10_4.png"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "2024 TX 500h F SPORT PERFORMANCE",
+            "price": 69350,
+            "category": 1,
+            "image": "/images/lexus/mains/lex11.png",
+            "details": [
+                "366-NET-COMBINED-HORSEPOWER HYBRID",
+                "SPORT-TUNED SUSPENSION",
+                "LEXUS SAFETY SYSTEM+ 3.0"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex11_1.png",
+                "/images/lexus/gal/lex11_2.png",
+                "/images/lexus/gal/lex11_3.png",
+                "/images/lexus/gal/lex11_4.png"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "2024 TX PLUG-IN HYBRID",
+            "price": 78050,
+            "category": 1,
+            "image": "/images/lexus/mains/lex12.png",
+            "details": [
+                "PLUG-IN HYBRID ELECTRIC VEHICLE",
+                "LEXUS INTERFACE SYSTEM",
+                "LEXUS SAFETY SYSTEM+ 3.0"
+            ],
+            "gallery": [
+                "/images/lexus/gal/lex12_1.png",
+                "/images/lexus/gal/lex12_2.png",
+                "/images/lexus/gal/lex12_3.png",
+                "/images/lexus/gal/lex12_4.png"
+            ]
+        }
+    ]
+}

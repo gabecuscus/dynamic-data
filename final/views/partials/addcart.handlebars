@@ -1,0 +1,17 @@
+
+
+<form action="/process" method="POST">
+
+        
+    <input type="hidden" name="name" value="{{#if current_car}}{{current_car.name}}{{else}}{{this.name}}{{/if}}">
+    <input type="hidden" name="category" value="{{#if current_car}}{{current_car.category}}{{else}}{{this.category}}{{/if}}">
+    <input type="hidden" name="id" value="{{#if current_car}}{{current_car.id}}{{else}}{{this.id}}{{/if}}">
+
+    {{!-- <input type="hidden" name="name" value="{{current_car.name}}"> --}}
+    {{!-- <input type="hidden" name="price" value="{{current_car.price}}"> --}}
+    {{!-- <input type="hidden" name="description" value="{{current_car.description}}"> --}}
+    {{!-- <input type="hidden" name="image" value="{{current_car.image}}"> --}}
+        <button type="submit">ADD TO CART</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View cart</button>
+        
+</form>

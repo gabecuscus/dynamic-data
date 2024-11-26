@@ -1,0 +1,221 @@
+{
+    "company": "genesis",
+    "products": [
+        {
+            "id": 1,
+            "name": "2025 Genesis G70",
+            "price": 42000,
+            "category": 3,
+            "image": "/images/genesis/mains/gen1.png",
+            "details": [
+                "300-HORSEPOWER TURBOCHARGED ENGINE",
+                "LUXURY SPORT DESIGN",
+                "STANDARD REAR-WHEEL DRIVE"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen1_1.png",
+                "/images/genesis/gal/gen1_2.png",
+                "/images/genesis/gal/gen1_3.png",
+                "/images/genesis/gal/gen1_4.png"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "2024 Genesis G80",
+            "price": 54400,
+            "category": 3,
+            "image": "/images/genesis/mains/gen2.png",
+            "details": [
+                "375-HORSEPOWER TURBO V6 ENGINE",
+                "14.5-INCH TOUCHSCREEN DISPLAY",
+                "LUXURIOUS WOOD-TRIMMED INTERIOR"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen2_1.png",
+                "/images/genesis/gal/gen2_2.png",
+                "/images/genesis/gal/gen2_3.png",
+                "/images/genesis/gal/gen2_4.png"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "2024 Electrified G80",
+            "price": 74375,
+            "category": 3,
+            "image": "/images/genesis/mains/gen3.png",
+            "details": [
+                "ALL-ELECTRIC SEDAN",
+                "282-MILE ESTIMATED RANGE",
+                "FAST CHARGING CAPABILITY"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen3_1.png",
+                "/images/genesis/gal/gen3_2.png",
+                "/images/genesis/gal/gen3_3.png",
+                "/images/genesis/gal/gen3_4.png"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "2024 Genesis G90",
+            "price": 89200,
+            "category": 3,
+            "image": "/images/genesis/mains/gen4.png",
+            "details": [
+                "420-HORSEPOWER TWIN-TURBO V6 ENGINE",
+                "REAR-WHEEL STEERING",
+                "NAPPA LEATHER INTERIOR"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen4_1.png",
+                "/images/genesis/gal/gen4_2.png",
+                "/images/genesis/gal/gen4_3.png",
+                "/images/genesis/gal/gen4_4.png"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "2024 Genesis GV60",
+            "price": 52000,
+            "category": 3,
+            "image": "/images/genesis/mains/gen5.png",
+            "details": [
+                "ALL-ELECTRIC CROSSOVER",
+                "300-MILE ESTIMATED RANGE",
+                "FACE RECOGNITION ENTRY SYSTEM"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen5_1.png",
+                "/images/genesis/gal/gen5_2.png",
+                "/images/genesis/gal/gen5_3.png",
+                "/images/genesis/gal/gen5_4.png"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "2025 Genesis GV70",
+            "price": 45700,
+            "category": 3,
+            "image": "/images/genesis/mains/gen6.png",
+            "details": [
+                "300-HORSEPOWER TURBOCHARGED ENGINE",
+                "ALL-WHEEL DRIVE STANDARD",
+                "LUXURY INTERIOR DESIGN"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen6_1.png",
+                "/images/genesis/gal/gen6_2.png",
+                "/images/genesis/gal/gen6_3.png",
+                "/images/genesis/gal/gen6_4.png"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "2025 Electrified GV70",
+            "price": 66950,
+            "category": 3,
+            "image": "/images/genesis/mains/gen7.png",
+            "details": [
+                "ALL-ELECTRIC SUV",
+                "236-MILE ESTIMATED RANGE",
+                "DUAL-MOTOR ALL-WHEEL DRIVE"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen7_1.png",
+                "/images/genesis/gal/gen7_2.png",
+                "/images/genesis/gal/gen7_3.png",
+                "/images/genesis/gal/gen7_4.png"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "2025 Genesis GV80",
+            "price": 58200,
+            "category": 3,
+            "image": "/images/genesis/mains/gen8.png",
+            "details": [
+                "375-HORSEPOWER TWIN-TURBO ENGINE",
+                "THREE-ROW SEATING OPTION",
+                "ADVANCED DRIVER-ASSISTANCE SYSTEMS"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen8_1.png",
+                "/images/genesis/gal/gen8_2.png",
+                "/images/genesis/gal/gen8_3.png",
+                "/images/genesis/gal/gen8_4.png"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "2025 Genesis GV80 Coupe",
+            "price": 79950,
+            "category": 3,
+            "image": "/images/genesis/mains/gen9.png",
+            "details": [
+                "SPORTY COUPE DESIGN",
+                "3.5-LITER TWIN-TURBO ENGINE",
+                "21-INCH ALLOY WHEELS"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen9_1.png",
+                "/images/genesis/gal/gen9_2.png",
+                "/images/genesis/gal/gen9_3.png",
+                "/images/genesis/gal/gen9_4.png"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "2026 Genesis GV80 Coupe",
+            "price": 90000,
+            "category": 3,
+            "image": "/images/genesis/mains/gen10.png",
+            "details": [
+                "HIGH-PERFORMANCE ELECTRIC SUV",
+                "RUGGED EXTERIOR STYLING",
+                "DUAL-MOTOR POWERTRAIN"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen10_1.png",
+                "/images/genesis/gal/gen10_2.png",
+                "/images/genesis/gal/gen10_3.png",
+                "/images/genesis/gal/gen10_4.png"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "2026 Genesis X Convertible",
+            "price": 125000,
+            "category": 3,
+            "image": "/images/genesis/mains/gen11.png",
+            "details": [
+                "ALL-ELECTRIC LUXURY CONVERTIBLE",
+                "ESTIMATED 300-MILE RANGE",
+                "STYLISH OPEN-TOP DESIGN"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen11_1.png",
+                "/images/genesis/gal/gen11_2.png",
+                "/images/genesis/gal/gen11_3.png",
+                "/images/genesis/gal/gen11_4.png"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "2026 Genesis X Speedium Coupe",
+            "price": 135000,
+            "category": 3,
+            "image": "/images/genesis/mains/gen12.png",
+            "details": [
+                "ALL-ELECTRIC PERFORMANCE COUPE",
+                "SLEEK FASTBACK DESIGN",
+                "HIGH-SPEED ELECTRIC DRIVE SYSTEM"
+            ],
+            "gallery": [
+                "/images/genesis/gal/gen12_1.png",
+                "/images/genesis/gal/gen12_2.png",
+                "/images/genesis/gal/gen12_3.png",
+                "/images/genesis/gal/gen12_4.png"
+            ]
+        }
+    ]
+}
