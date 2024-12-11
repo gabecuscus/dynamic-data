@@ -149,7 +149,7 @@ exports.ren_genesis = (req,res)=> {
 
 exports.ren_about = (req, res)=> {
 
-    res.render('thank_you');
+    res.render('about');
 }
 
 exports.ren_home = (req, res)=> {
