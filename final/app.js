@@ -50,8 +50,7 @@ console.log(process.env);
 
 
 
-
-
+app.get("/about", handler.ren_about);
 
 // render home page
 app.get("/",(req,res)=>{

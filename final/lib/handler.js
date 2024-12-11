@@ -11,6 +11,36 @@ const all_the_JSON = {
     "genesis": require('../data/genesis.json')
 };
 
+function getRandomCarsObject(numCars) {
+    console.log("begin random car search");
+    const selectedCars = {}; // Object to store 6 random cars
+    const brands = Object.keys(all_the_JSON); // ['lexus', 'toyota', 'genesis']
+
+    // Loop until we select the desired number of unique cars
+    while (Object.keys(selectedCars).length < numCars) {
+        // Step 1: Roll dice to choose a random brand
+        const randomBrand = brands[Math.floor(Math.random() * brands.length)];
+        const cars = all_the_JSON[randomBrand].products;
+
+        // Step 2: Roll dice to choose a random car from the selected brand
+        const randomCar = cars[Math.floor(Math.random() * cars.length)];
+
+        // Step 3: Add the car to the selectedCars object if it's not already included
+        if (!selectedCars[randomCar.id]) {
+            // Replace the category with the brand name
+            selectedCars[randomCar.id] = {
+                ...randomCar,
+                category: randomBrand // Replace category with the brand name
+            };
+        }
+    }
+
+    console.log("the 6 cars!!:", selectedCars);
+    return selectedCars; // Return an object with 6 unique cars
+}
+
+
+
 function getRandomCarsObject() {
     console.log("begin random car search");
     const selectedCars = {}; // Object to store 6 random cars
@@ -117,12 +147,17 @@ exports.ren_genesis = (req,res)=> {
     res.render('category', {data, shopping_cart});
 }
 
+exports.ren_about = (req, res)=> {
+
+    res.render('thank_you');
+}
 
 exports.ren_home = (req, res)=> {
     // all_the_JSON
     
-    var sixRandomCars = getRandomCarsObject();
-    res.render('home', {shopping_cart, sixRandomCars})
+    var sixRandomCars = getRandomCarsObject(6);
+    var sixRandomCars2 = getRandomCarsObject(15);
+    res.render('home', {shopping_cart, sixRandomCars, sixRandomCars2})
 }
 
 
@@ -244,7 +279,7 @@ exports.ren_checkOut = (req,res)=> {
 
 
 // ------------- EXPORTS page -----------------------
-
+exports.ren_about = this.ren_about;
 exports.ren_home = this.ren_home;
 
 exports.ren_lexus = this.ren_lexus;

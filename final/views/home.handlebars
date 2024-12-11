@@ -1,16 +1,57 @@
-<h1> .</h1>
-<h1>de homeeeee</h1>
+<h1> _____</h1>
+<h1>DORALZUELA dealership home</h1>
+<p>welocme to Doralzuela cars, we hope you have a greeat day and find a cool car</p>
 
 
 {{>viewCartWindow}}
 
 
+<h3>car of the day!</h3>
 
 
-
-<div id="carGallery" class="carousel slide mb-5" data-bs-ride="carousel">
+<div class="container">
+  <div id="carGallery" class="carousel slide mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
       {{#each sixRandomCars}}
+        <div class="carousel-item {{#if @first}}active{{/if}}">
+          <div class="row align-items-center"> ____________________________  
+            <div class="col-md-6"> 
+              <div class="card h-100 shadow-sm">
+                <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}" style="object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">{{this.name}}</h5>
+                  <p class="card-text">${{formatPrice this.price}}</p>
+                  <a href="/{{this.category}}/details/{{this.id}}" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-end"> 
+              {{!-- <button class="btn btn-danger btn-lg">View more {{this.category}} cars</button>  --}}
+              <a href="/{{this.category}}/cat" class="btn btn-primary">View more {{this.category}} cars</a>
+            </div>
+          </div> 
+        </div>
+      {{/each}}
+    </div>
+    <button class="carousel-control-prev position-absolute top-50 translate-middle-y" 
+            type="button" data-bs-target="#carGallery" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next position-absolute top-50 translate-middle-y" 
+            type="button" data-bs-target="#carGallery" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+<h3>car of the week!</h3>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    {{#each sixRandomCars2}}
       <div class="col">
         <div class="card h-100 shadow-sm">
           <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
@@ -22,13 +63,5 @@
         </div>
       </div>
     {{/each}}
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carGallery" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carGallery" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
 </div>
