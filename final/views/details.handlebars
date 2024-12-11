@@ -1,138 +1,72 @@
-{{!-- {{#each data.products}}
-{{this.image}}
-{{this.id}} {{this.name}} {{this.price}} <br>
-
-    {{>addcart}}
-
-    {{#each this.gallery}}
-    {{}}
-    {{/each}}
-
-
-{{/each}}
- --}}
-
-{{!-- <img src="{{}}" alt=""> --}}
-
-{{!-- ---------------          THE MAIN SHOW               --------------- --}}
-<h2>{{current_car.name}}</h2>
-<div class="container">
-    <img src="{{current_car.image}}" alt="">
-</div>
-<h4>starting at ${{formatPrice current_car.price}}</h4>
-<h3>{{current_car.description}}</h3>
-
-<div class="container">
-    {{#each current_car.details}}
-        <p>{{this}}</p>
-    {{/each}}
-</div>
-
-
-
-
-
-{{!----------------        LEFT  SIDE WINDOW POP UP     ------------------}}
-<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas LEFT</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="carousel-inner col-md-9">
-        {{#each sixRandomCars}}
-        <div class="carousel-item {{#if @first}}active{{/if}}" style="text-align: center;">
-            {{!-- de cardooooo --}}
-            <div class="card" style="width: 18rem;">
-                <img src="{{this.image}}" class="card-img-top" alt="...">
-                {{!-- <img src="{{this.image}}" class="img-fluid col-md-5" style="max-height: 300px; object-fit: contain;"> --}}
-                <div class="card-body">
-                <h5 class="card-title">{{this.name}}</h5>
-                <h5> o o o o oop</h5>
-                <p class="card-text">{{this.price}}.</p>
-                <a href="/{{this.category}}/details/{{this.id}}" class="btn btn-primary">View</a>
-            </div>
-            </div>
-        </div>
+<div class="container mt-5">
+  <h1 class="mb-4">{{current_car.name}}</h1>
+  
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <img src="{{current_car.image}}" alt="{{current_car.name}}" class="img-fluid rounded shadow">
+    </div>
+    
+    <div class="col-md-6">
+      <h2 class="text-primary mb-3">Starting at ${{formatPrice current_car.price}}</h2>
+      <p class="lead mb-4">{{current_car.description}}</p>
+      
+      <div class="bg-light p-3 rounded mb-4">
+        {{#each current_car.details}}
+          <p><i class="bi bi-check-circle-fill text-success me-2"></i>{{this}}</p>
         {{/each}}
+      </div>
+      
+      <div class="d-grid gap-2">
+        {{>addcart}}
+
+        {{!--  View Cart Button--------------------}}
+        
+            {{>viewCartButton}}
+
+        {{!------------------View Cart Button-------}}
+
+      </div>
     </div>
   </div>
-    <div>
-        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
-    </div>
-</div>
 
-
-
-
-
-
-{{!---------------- gallery for other car photos-----------------}}
-<div id="galleryCarousel" style="background-color:rgb(32, 39, 37);" class="carousel slide col-md-5" data-bs-ride="carousel">
-    <div class="carousel-inner col-md-9">
-        {{#each current_car.gallery}}
-        <div class="carousel-item {{#if @first}}active{{/if}}" style="text-align: center;">
-            <img src="{{this}}" class="img-fluid col-md-5" style="max-height: 300px; object-fit: contain;">
+  <h3 class="mt-5 mb-4">Gallery</h3>
+  <div id="carGallery" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      {{#each current_car.gallery}}
+        <div class="carousel-item {{#if @first}}active{{/if}}">
+          <img src="{{this}}" class="d-block w-100 rounded" alt="Gallery image">
         </div>
-        {{/each}}
+      {{/each}}
     </div>
-
-    <!-- Left Control -->
-    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carGallery" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-
-    <!-- Right Control -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carGallery" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
     </button>
-</div>
+  </div>
 
-
-{{!--   ADD CART FUNCTIONALLITY             PARTIAL--}}
-<div class="container" style="padding-top: 20px; padding-bottom: 30px;">
-    {{>addcart}}
-</div>
-
-{{!-- GLOBAL GALLERY                        PARTIAL --}}
-<div class="container">
-    {{>global_gallery}}
-</div>
-
-
-
-{{!-- RIGHT SIDE CART CHECK OUT PAGE                 SHOPPING CART--}}
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <a href="/checkout" class="btn btn-primary">Check Out</a>
-        <div class="container">
-            <h5>Total: ${{formatPrice total_price}}</h5>
+  <h3 class="mb-4">Recommended for You</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    {{#each sixRandomCars}}
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">${{formatPrice this.price}}</p>
+            <a href="/{{this.category}}/details/{{this.id}}" class="btn btn-primary">View Details</a>
+          </div>
         </div>
-        {{#each shopping_cart}}
-        <div class="col-6 col-md-4 col-lg-3 mb-3">
-            <div class="card border-0 shadow-sm">
-                <img class="card-img-top img-fluid" src="{{this.image}}" alt="{{this.name}}">
-                <div class="card-body text-left">   
-                    <a href="/{{this.category}}/details/{{this.id}}"><p class="card-title" style="font-weight: bold;">{{this.name}}</p></a>        
-                </div>
-                <div class="card-body text-end">
-                    <p class="card-text" style="font-size: 0.77rem; color: #504f4f;">${{formatPrice this.price}}</p>
-                </div>
-            </div>
-            <hr>
-        </div>
-            {{!-- insert card or row   div --}}
-            {{!-- <div class="container">
-                <p>{{this.name}}</p>
-                <img src="{{this.image}}" alt="">
-            </div> --}}
-        {{/each}}
-
-    </div>
+      </div>
+    {{/each}}
+  </div>
 </div>
+
+<!--  //////////////// Shopping Cart Offcanvas ///////////////////////////////////////////////////////////  -->
+
+    {{>viewCartWindow}}
+
+<!--  //////////////////////////////////////////////////////////////  Shopping Cart Offcanvas /////////////////  -->

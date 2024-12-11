@@ -1,0 +1,241 @@
+body.main_background {
+    background: linear-gradient(to bottom, #f8ce7e, #FFFFFF);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+
+  .navGabeSpecial{
+    background: linear-gradient(to right, #ffffff, #f96060);
+  }
+  
+  .ViewCart_in_cat_view{
+    margin-top: 3.5rem;
+    background: linear-gradient(to left, #ffffff, #f4bfbf);
+    /* position:fixed; */
+  }
+
+
+  .product-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .product-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-main {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .product-image-container {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-price {
+    font-size: 1.8rem;
+    color: #e67e22;
+    margin-bottom: 1rem;
+  }
+  
+  .product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-details-list {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-detail-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #e67e22;
+    border-color: #e67e22;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+  }
+  
+  .btn-secondary {
+    background-color: #5fe300;
+    border-color: #0099ff;
+    color: #0080ff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #cf00a2;
+    border-color: #510045;
+  }
+  
+  .product-gallery {
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-item img {
+    border-radius: 8px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .recommended-products {
+    margin-bottom: 2rem;
+  }
+  
+  .recommended-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .recommended-carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .recommended-item {
+    flex: 0 0 auto;
+    width: 250px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .offcanvas {
+    width: 350px;
+  }
+  
+  .cart-total {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .cart-items {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .product-main {
+      flex-direction: column;
+    }
+    
+    .product-image-container {
+      max-width: 100%;
+    }
+  }
+
+  
+  body.main_background {
+    background: linear-gradient(to bottom, #f8ce7e, #FFFFFF);
+    font-family: 'Arial', sans-serif;
+  }
+
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .shopping-cart-items {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+  }
+
+  #carGallery .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    #carGallery .carousel-item img {
+      height: 300px;
+    }
+  }

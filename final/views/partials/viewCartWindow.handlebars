@@ -1,0 +1,34 @@
+<!--  //////////////// Shopping Cart Offcanvas ///////////////////////////////////////////////////////////  -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingCartOffcanvas" aria-labelledby="shoppingCartOffcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="shoppingCartOffcanvasLabel">Shopping Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="mb-3">
+      {{!-- <h5>Total: ${{formatPrice total_price}}</h5> --}}
+    </div>
+    <div class="shopping-cart-items">
+      {{#each shopping_cart}}
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="{{this.image}}" class="img-fluid rounded-start" alt="{{this.name}}">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">${{formatPrice this.price}}</p>
+                <a href="/{{this.category}}/details/{{this.id}}" class="btn btn-sm btn-outline-secondary">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="d-grid gap-2 mt-3">
+      <a href="/checkout" class="btn btn-primary">Proceed to Checkout</a>
+    </div>
+  </div>
+</div>
+<!--  //////////////////////////////////////////////////////////////  Shopping Cart Offcanvas /////////////////  -->

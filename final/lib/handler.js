@@ -39,7 +39,7 @@ function getRandomCarsObject() {
     return selectedCars; // Return an object with 6 unique cars
 }
 var shopping_cart = {
-    "00": {
+    /*"00": {
         id: 1,
         name: "2024 4Runner",
         price: 40705,
@@ -74,7 +74,7 @@ var shopping_cart = {
             "/images/genesis/gal/gen2_3.png",
             "/images/genesis/gal/gen2_4.png"
         ]
-    }
+    }*/
 };
 function calculateTotalPrice(cart) {
     let total = 0;
@@ -102,29 +102,33 @@ function calculateTotalPrice(cart) {
 exports.ren_lexus = (req,res)=> {
     const data = require('../data/lexus.json');
 
-    res.render('category', {data});
+    res.render('category', {data, shopping_cart});
 }
 
 exports.ren_toyota = (req,res)=> {
     const data = require('../data/toyota.json');
 
-    res.render('category', {data});
+    res.render('category', {data, shopping_cart});
 }
 
 exports.ren_genesis = (req,res)=> {
     const data = require('../data/genesis.json');
 
-    res.render('category', {data});
+    res.render('category', {data, shopping_cart});
 }
 
 
+exports.ren_home = (req, res)=> {
+    // all_the_JSON
+    
+    var sixRandomCars = getRandomCarsObject();
+    res.render('home', {shopping_cart, sixRandomCars})
+}
 
 
 exports.ren_thank_you = (req,res)=> {
     
     var total_price = calculateTotalPrice(shopping_cart);
-
-
 
 
     res.render('thankYou', {total_price, perosnal_info});
@@ -220,6 +224,9 @@ exports.updateCart = (req, res)=> {
     shopping_cart[String(cartCounter)] = current_car;
     console.log("the shopping cart after the push");
     console.log(shopping_cart);
+    
+    // res.redirect(req.get('referer'));
+    res.redirect('back');
 
 }
 var perosnal_info = {};
@@ -237,6 +244,9 @@ exports.ren_checkOut = (req,res)=> {
 
 
 // ------------- EXPORTS page -----------------------
+
+exports.ren_home = this.ren_home;
+
 exports.ren_lexus = this.ren_lexus;
 exports.ren_toyota = this.ren_toyota;
 exports.ren_genesis = this.ren_genesis;

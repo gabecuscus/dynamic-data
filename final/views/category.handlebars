@@ -32,11 +32,33 @@
 
 <h1 class="text-center mb-4" style="font-weight: bold;">{{data.company}}!!!!!</h1>
 
+
+<!--  //////////////////  Shopping Cart Offcanvas /////////////////  -->
+    {{>viewCartWindow}}
+<!--  //////////////////  Shopping Cart Offcanvas /////////////////  -->
+
+
+{{!--  View Cart Button--------------------}}
+    
+    <div class="fixed-top ViewCart_in_cat_view">
+        {{!-- i decided to put it in the nav --}}
+        {{!-- {{>viewCartButton}} --}}
+    </div>
+    
+    
+{{!------------------View Cart Button-------}}
+
+
+
+
+
 <div class="container">
     <div class="row">
         {{#each data.products}}
         <div class="col-md-3 mb-4">
             <div class="card border-0 shadow-sm">
+                    <a href="/{{../data.company}}/details/{{this.id}}" class="btn btn-link text-decoration-none text-dark">
+                    {{!-- View Product Details --}}
                 <img class="card-img-top img-fluid" src="{{this.image}}" alt="{{this.name}}">
                 <div class="card-body text-left">
                     <p class="card-title" style="font-weight: bold;">{{this.name}}</p>
@@ -44,12 +66,12 @@
                     
 
                     {{!-- <a href="/category{{this.category}}/details/{{this.id}}" class="btn btn-link text-decoration-none text-dark">View Product Details</a> --}}
-                    <a href="/{{../data.company}}/details/{{this.id}}" class="btn btn-link text-decoration-none text-dark">View Product Details</a>
                 </div>
                 <div class="card-footer text-center bg-light border-0">
                     {{>addcart}}
                 </div>
             </div>
+            </a>
             <hr>
         </div>
         

@@ -60,11 +60,11 @@ app.get("/",(req,res)=>{
 })
 
 // render about page
-app.get("/about",(req,res)=>{
-    const about = require('./data/about.json')
-    res.render('homepage', {about})
-})
-
+// app.get("/about",(req,res)=>{
+//     const about = require('./data/about.json')
+//     res.render('homepage', {about})
+// })
+app.get("/home", handler.ren_home);
 
 
 
@@ -87,8 +87,20 @@ app.get('/lexus/details/:id', handler.ren_lex_details);
 app.get('/toyota/details/:id', handler.ren_toy_details);
 app.get('/genesis/details/:id', handler.ren_gen_details);
 
+
+
+
+
+
+
+
+
+
+
 app.get('/', (req, res) => {
     res.render('newsletter-signup', {csrf : 'supersecret'});
+    // i think i might ahve an erorr here triny to render newsleter-signup
+    // this might be why i cant press add to cart two times in a row
 });
 app.post('/process', handler.updateCart); // logner link
 
